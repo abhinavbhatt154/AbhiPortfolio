@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abhinav Bhatt | Student Portfolio</title>
+<!-- Using Bootstrap 5 for the layout and basic components -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols for icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        /* Custom styles for a clean, beginner-friendly look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Basic Navigation Styling */
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section Styling */
+        #home {
+            padding: 100px 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .profile-img {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Section Spacing */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        /* Skills Progress Bars */
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        /* Card Styling - Removing glassmorphism for simple Bootstrap cards */
+        .card {
+            border: 1px solid #dee2e6;
+            border-radius: 12px;
+            transition: transform 0.2s;
+            background-color: #fff;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .project-img {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        /* Education Timeline - Simplified */
+        .timeline {
+            border-left: 3px solid #0d6efd;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #0d6efd;
+        }
+
+        /* Milestone Stats */
+        .stat-card {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #0d6efd;
+        }
+
+        /* Contact Section Background */
+        #contact {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .contact-info-icon {
+            color: #0d6efd;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Footer Styling */
+        footer {
+            padding: 40px 0;
+            background-color: #212529;
+            color: #adb5bd;
+        }
+
+        .social-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<div class="container">
+<a class="navbar-brand fw-bold text-primary" href="#">Abhinav Bhatt</a>
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item ms-lg-3">
+<a class="btn btn-primary rounded-pill px-4" href="./abhinav cv.pdf">Resume</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="home">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-7">
+<span class="badge bg-primary-subtle text-primary mb-3 p-2">Available for Internships</span>
+<h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary">Abhinav Bhatt</span></h1>
+<h2 class="h3 text-secondary mb-4">Computer Science Student &amp; Developer</h2>
+<p class="lead mb-5 text-muted">
+                        I am a passionate Full Stack Developer focused on building clean and functional web applications. I love learning new technologies and solving complex problems.
+                    </p>
+<div class="d-flex gap-3">
+<a class="btn btn-primary btn-lg px-4" href="#projects">View Projects</a>
+<a class="btn btn-outline-secondary btn-lg px-4" href="#contact">Get in Touch</a>
+</div>
+</div>
+<div class="col-md-5 text-center mt-5 mt-md-0">
+<img alt="Alex Rivera" class="profile-img img-fluid" src="./abhi.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-light" id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="card p-4 p-md-5 border-0 shadow-sm">
+<div class="row align-items-center">
+<div class="col-md-6">
+<p>
+                                    I am currently a junior pursuing my B.Tech in Computer Science at <strong>CGC University</strong>. My goal is to become a software engineer who builds tools that help people.
+                                </p>
+<p>
+                                    I started coding in high school and fell in love with web development. I enjoy both front-end design and back-end logic. I'm always looking for ways to improve my skills and stay updated with the latest industry trends.
+                                </p>
+<div class="mt-4">
+<div class="d-flex align-items-center mb-2">
+<span class="material-symbols-outlined contact-info-icon">school</span>
+<span>GPA: 7.75 / 10.0</span>
+</div>
+<div class="d-flex align-items-center">
+<span class="material-symbols-outlined contact-info-icon">location_on</span>
+<span>Mohali,Punjab</span>
+</div>
+</div>
+</div>
+<div class="col-md-6 mt-4 mt-md-0">
+<div class="bg-primary p-4 text-white rounded-4">
+<h4 class="mb-3">Career Objective</h4>
+<p class="mb-0">
+                                        To secure a software engineering internship where I can apply my programming skills to real-world projects and learn from experienced professionals in the field.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills">
+<div class="container">
+<h2 class="section-title">Technical Skills</h2>
+<div class="row g-4">
+<!-- Frontend -->
+<div class="col-md-4">
+<div class="card p-4">
+<h4 class="mb-4 border-bottom pb-2">Frontend</h4>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-1">
+<span>HTML &amp; CSS</span>
+<span>95%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar bg-primary" style="width: 95%"></div>
+</div>
+</div>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-1">
+<span>Bootstrap</span>
+<span>85%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar bg-primary" style="width: 85%"></div>
+</div>
+</div>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-1">
+<span>JavaScript</span>
+<span>80%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar bg-primary" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Backend -->
+<div class="col-md-4">
+<div class="card p-4">
+<h4 class="mb-4 border-bottom pb-2">Backend</h4>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-1">
+<span>Node.js</span>
+<span>90%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar bg-info" style="width: 90%"></div>
+</div>
+</div>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-1">
+<span>C++</span>
+<span>80%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar bg-info" style="width: 80%"></div>
+</div>
+</div>
+<div class="skill-item">
+<div class="d-flex justify-content-between mb-1">
+<span>Python</span>
+<span>70%</span>
+</div>
+<div class="progress" style="height: 10px;">
+<div class="progress-bar bg-info" style="width: 70%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tools -->
+<div class="col-md-4">
+<div class="card p-4">
+<h4 class="mb-4 border-bottom pb-2">Tools</h4>
+<div class="d-flex flex-wrap gap-2">
+<span class="badge bg-secondary">Git & GitHub</span>
+<span class="badge bg-secondary">Android Studio</span>
+<span class="badge bg-secondary">VS Code</span>
+<span class="badge bg-secondary">Linux</span>
+<span class="badge bg-secondary">Bootstrap</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="bg-light" id="projects">
+<div class="container">
+<h2 class="section-title">My Projects</h2>
+
+<div class="row g-4">
+ <!-- Project 1 -->
+<div class="col-md-6">
+<div class="card">
+<img alt="Social App" class="project-img card-img-top" src="./BlinkBasket.png"/>
+<div class="card-body">
+<h5 class="card-title fw-bold">BlinkBasket</h5>
+<p class="card-text text-muted">BlinkBasket is a conceptual e-commerce platform that reimagines how users shop when the same product is available from multiple sellers with different delivery speeds and prices.
+
+Instead of showing only one seller, BlinkBasket allows users to compare: </p>
+
+Quick Delivery – delivered in about 1 hour from a nearby local shop.</p>
+
+Same Day Delivery – delivered later the same day from a seller within the city.</p>
+
+All India Delivery – delivered in 2–3 days from another city at a lower price.</p>
+<div class="mb-3">
+<span class="badge bg-light text-dark border">HTML5</span>
+<span class="badge bg-light text-dark border">CSS3</span>
+<span class="badge bg-light text-dark border">JavaScript (ES6+)</span>
+<span class="badge bg-light text-dark border">Bootstrap 5</span>
+</div>
+<div class="d-flex gap-2">
+<a class="btn btn-sm btn-primary" href="https://keen-entremet-74c898.netlify.app">Live Demo</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://github.com/abhinavbhatt154/blinkbasket">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="col-md-6">
+<div class="card">
+<img alt="PhishGuard App" class="project-img card-img-top" src="./phishBack2.jpeg"/>
+<div class="card-body">
+<h5 class="card-title fw-bold">PhishGuard</h5>
+<p class="card-text text-muted">PhishGuard is an Android cybersecurity application that detects potentially fraudulent SMS messages in real time using keyword-based phishing analysis. It alerts users through instant notifications and maintains a local history of detected threats using SQLite. Built with Java and Android Studio, the project demonstrates Android Broadcast Receivers, runtime permissions, notifications, and local database integration while focusing on improving mobile security awareness.</p>
+<div class="mb-3">
+<span class="badge bg-light text-dark border">Java</span>
+<span class="badge bg-light text-dark border">Android Studio</span>
+</div>
+<div class="d-flex gap-2">
+<a class="btn btn-sm btn-primary" href="./phish1.jpeg">Live Demo</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://github.com/abhinavbhatt154/PhishGuard">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Project 3
+<div class="col-md-4">
+<div class="card">
+<img alt="Translator" class="project-img card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXocuKRqFVbeNmPisAuzprXLNJGAGtXG_ySTsi1M2oVYYz_Bekorh7ym_-G0eNPW__GZ3RqkfAou5c15Vbwo7be7dYpjC_KXv3B8Me8LFy6DGsDqZYg-Wdbert6AhiEDm4LoM2oAqhaFijBAPlC4_H7Tjtlyux5swL764OicsI446m0Zg1KyABflf2pQsrFwhdaY_RJc4MRxpsopsvlcUXJo-KrnY9EZy0Yt-dAh0o9Ob01g6Pum53sR2miLpE15D6rAnE2sIK0TOe"/>
+<div class="card-body">
+<h5 class="card-title fw-bold">Linguist AI</h5>
+<p class="card-text text-muted">A tool that translates text between multiple languages using an AI API.</p>
+<a class="btn btn-sm btn-link ps-0" href="#">View Code →</a>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<!-- <div class="col-md-4">
+<div class="card">
+<img alt="Finance" class="project-img card-img-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhLYt22wi2km86yZcMb8BODQeiM8T7Eg5bPNRmToE0KXbpO-YRjhn36o54KaKzScOjncqxy27TGA6zKDx4B6r4G5C67sm7fGwsFD_t4vi4nbwn24aKqLfJf-Ibwbk88G6KBDJRSROyJO_8idNhwEAooffpNq3WsCvwFs7QfEoCfN7pqk-mG-mVwQ_lWdJJspNvTDFN8OngviYcnM1K2Vc6WWsNj4y5PoGjnb5uLSQet8qgG-eZgD2fGsTbUinqNImQjQk215LYHijz"/>
+<div class="card-body">
+<h5 class="card-title fw-bold">FinanceFlow</h5>
+<p class="card-text text-muted">A simple application to track daily expenses and visualize spending habits.</p>
+<a class="btn btn-sm btn-link ps-0" href="#">View Code →</a>
+</div>
+</div>
+</div> --> 
+<!-- View More GitHub Button -->
+<div class="col-md-4 d-flex align-items-center justify-content-center">
+<div class="text-center">
+<p class="mb-3">Want to see more?</p>
+<a class="btn btn-dark btn-lg" href="https://github.com/abhinavbhatt154">Visit my GitHub</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Achievements -->
+<section id="education">
+<div class="container">
+<div class="row">
+<!-- Education Timeline -->
+<div class="col-lg-7 mb-5 mb-lg-0">
+<h2 class="mb-5 fw-bold">Education</h2>
+<div class="timeline">
+<div class="timeline-item">
+<span class="text-primary fw-bold">2024 - Present</span>
+<h4 class="mt-2"><B class="Tech"></B> in Computer Science</h4>
+<p class="text-secondary mb-1">CGC University</p>
+<p class="small text-muted">Focused on Data Structures, Algorithms, and Software Engineering.</p>
+</div>
+<div class="timeline-item">
+<span class="text-muted fw-bold">2022 - 2024</span>
+<h4 class="mt-2">Intermediate (Non-Medical)</h4>
+<p class="text-secondary mb-1">Saarthak School</p>
+<p class="small text-muted">Member of the Computer Club and Judo Team.</p>
+</div>
+</div>
+</div>
+<!-- Milestones / Stats -->
+<div class="col-lg-5">
+<h2 class="mb-5 fw-bold">Milestones</h2>
+<div class="row g-3">
+<div class="col-12">
+<div class="stat-card">
+<div class="stat-number">15</div>
+<div class="h5">Projects Completed</div>
+</div>
+</div>
+<div class="col-6">
+<div class="stat-card">
+<div class="stat-number">5</div>
+<div class="h5">Hackathons</div>
+</div>
+</div>
+<div class="col-6">
+<div class="stat-card">
+<div class="stat-number">3</div>
+<div class="h5">Certificates</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<div class="card bg-white text-dark shadow overflow-hidden">
+<div class="row g-0">
+<!-- Contact Info -->
+<div class="col-md-5 bg-primary p-5 text-white">
+<h2 class="fw-bold mb-4">Get in Touch</h2>
+<p class="mb-5 opacity-75">I'm currently looking for internships and collaboration opportunities. Feel free to reach out!</p>
+<div class="mb-4">
+<p class="mb-1 fw-bold"><span class="material-symbols-outlined align-middle me-2">mail</span> Email</p>
+<p class="mb-0">abhinavbhattabhinav154@gmail.com</p>
+</div>
+<div class="mb-4">
+<p class="mb-1 fw-bold"><span class="material-symbols-outlined align-middle me-2">call</span> Phone</p>
+<p class="mb-0">(+91) 9888290799</p>
+</div>
+<div class="mt-5">
+<div class="p-3 bg-white bg-opacity-25 rounded-3 border border-white border-opacity-25">
+<p class="small mb-2 fw-bold">My Location</p>
+<p class="small mb-0">Zirakpur,Punjab</p>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="col-md-7 p-5">
+<form id="contactForm">
+<div class="row g-3">
+<div class="col-md-6">
+<label class="form-label small fw-bold">Name</label>
+<input class="form-control" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="col-md-6">
+<label class="form-label small fw-bold">Email</label>
+<input class="form-control" placeholder="john@example.com" required="" type="email"/>
+</div>
+<div class="col-12">
+<label class="form-label small fw-bold">Subject</label>
+<input class="form-control" placeholder="Project Inquiry" required="" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label small fw-bold">Message</label>
+<textarea class="form-control" placeholder="Your message here..." required="" rows="5"></textarea>
+</div>
+<div class="col-12 mt-4">
+<button class="btn btn-primary w-100 py-3 fw-bold" type="submit">Send Message</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="text-center">
+<div class="container">
+<h4 class="text-white mb-3">Abhinav Bhatt</h4>
+<p class="mb-4">Thank you for visiting my portfolio!</p>
+<div class="social-links mb-4">
+<a href="https://www.linkedin.com/in/abhinav-bhatt-449829343/">LinkedIn</a>
+<a href="https://github.com/abhinavbhatt154">GitHub</a>
+<a href="https://x.com/AbhinavBht154">Twitter</a>
+<a href="mailto:abhinavbhattabhinav154@gmail.com">Email</a>
+
+</div>
+<hr class="border-secondary my-4"/>
+<p class="small mb-0">© 2026 Abhinav Bhatt. Built with Bootstrap 5.</p>
+<div class="mt-4">
+<button class="btn btn-outline-secondary btn-sm" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined align-middle">arrow_upward</span> Back to Top
+                </button>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Simple Scripts for Basic Interaction -->
+<script>
+        // Form submission alert
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Simple console log to show the page has loaded
+        console.log("Alex Rivera's Student Portfolio Loaded Successfully!");
+    </script>
+</body></html>
